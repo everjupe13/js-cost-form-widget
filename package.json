@@ -1,0 +1,35 @@
+{
+  "name": "steklo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "html": "gulp",
+    "php": "gulp dev_php",
+    "build": "gulp libs_style && gulp style && gulp libs_js && gulp build_js && gulp html"
+  },
+  "browserslist": [
+    "defaults",
+    "IE 11",
+    "not dead",
+    "> 0.25%"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.18.9",
+    "@babel/preset-env": "^7.18.9",
+    "browser-sync": "^2.27.10",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-babel": "^8.0.0",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-sass": "^5.1.0",
+    "gulp-sass-bulk-importer": "^3.0.2",
+    "gulp-sourcemaps": "^3.0.0",
+    "gulp-uglify-es": "^3.0.0",
+    "require-dir": "^1.2.0",
+    "sass": "^1.54.0"
+  }
+}
