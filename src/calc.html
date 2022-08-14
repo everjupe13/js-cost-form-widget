@@ -60,7 +60,7 @@
 
 <body>
 
-    <div class="calcui-root-ctc">
+    <div data-calcui="calcui-root-ctc" class="calcui-root-ctc">
 
         <div data-calcui-entity="1" class="place-block">
 
@@ -356,11 +356,13 @@
                         </div>
                         <div class="calcui-quant__nav">
                             <div class="calcui-quant__nav-info">
-                                <span class="calcui-text-smaller calcui-quant__nav-text">Общая площадь: 0.00 м2</span>
-                                <span class="calcui-text-smaller calcui-quant__nav-text">Общий периметр: 0.00 п.
+                                <span data-calcui-glass-out="summS"
+                                    class="calcui-text-smaller calcui-quant__nav-text">Общая площадь: 0.00 м2</span>
+                                <span data-calcui-glass-out="summP"
+                                    class="calcui-text-smaller calcui-quant__nav-text">Общий периметр: 0.00 п.
                                     м.</span>
                             </div>
-                            <span class="btn btn-default animate-load has-ripple">
+                            <span data-calcui-action="addGlass" class="btn btn-default animate-load has-ripple">
                                 <svg class="btn-icon" width="16" height="17" viewBox="0 0 16 17" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path d="M7.5 0.75V16.25" stroke="white" stroke-width="2" />
@@ -416,8 +418,8 @@
                             </div>
                             <div class="inner-block__checkboxes-row">
                                 <div class="calcui-checkbox__block">
-                                    <input type="checkbox" id="cu21" class="calcui-checkbox calcui-checkbox__light">
-                                    <label for="cu21" class="calcui-checkbox__btn"></label>
+                                    <input type="checkbox" id="cf01" class="calcui-checkbox calcui-checkbox__light">
+                                    <label for="cf01" class="calcui-checkbox__btn"></label>
                                     <span class="calcui-checkbox__text">Полировка п.м</span>
                                     <svg class="calcui-checkbox__icon" width="18" height="18" viewBox="0 0 22 22"
                                         fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -431,8 +433,8 @@
                                     <span class="calcui-text-smaller calcui-cost">+100 руб.</span>
                                 </div>
                                 <div class="calcui-checkbox__block">
-                                    <input type="checkbox" id="cu22" class="calcui-checkbox calcui-checkbox__light">
-                                    <label for="cu22" class="calcui-checkbox__btn"></label>
+                                    <input type="checkbox" id="cf02" class="calcui-checkbox calcui-checkbox__light">
+                                    <label for="cf02" class="calcui-checkbox__btn"></label>
                                     <span class="calcui-checkbox__text">Шлифовка п.м</span>
                                     <svg class="calcui-checkbox__icon" width="18" height="18" viewBox="0 0 22 22"
                                         fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -446,8 +448,8 @@
                                     <span class="calcui-text-smaller calcui-cost">+100 руб.</span>
                                 </div>
                                 <div class="calcui-checkbox__block">
-                                    <input type="checkbox" id="cu23" class="calcui-checkbox calcui-checkbox__light">
-                                    <label for="cu23" class="calcui-checkbox__btn"></label>
+                                    <input type="checkbox" id="cf03" class="calcui-checkbox calcui-checkbox__light">
+                                    <label for="cf03" class="calcui-checkbox__btn"></label>
                                     <span class="calcui-checkbox__text">Закалка кв.м</span>
                                     <svg class="calcui-checkbox__icon" width="18" height="18" viewBox="0 0 22 22"
                                         fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -520,7 +522,7 @@
                                     </svg>
                                     <span class="calcui-text-smaller calcui-cost">+100 руб.</span>
                                 </div>
-                                <div data-calcui="" class="inner-block__items-row">
+                                <div data-calcui="drilling" class="inner-block__items-row">
                                     <div data-calcui-value="100" class="calcui-radio">
                                         <div class="calcui-radio__inner">
                                             <span class="calcui-radio__text">меньше 20мм</span>
@@ -666,8 +668,8 @@
                             </div>
                             <div class="inner-block__checkboxes-row">
                                 <div class="calcui-checkbox__block">
-                                    <input type="checkbox" id="cu31" class="calcui-checkbox calcui-checkbox__light">
-                                    <label for="cu31" class="calcui-checkbox__btn"></label>
+                                    <input type="checkbox" id="cm01" class="calcui-checkbox calcui-checkbox__light">
+                                    <label for="cm01" class="calcui-checkbox__btn"></label>
                                     <span class="calcui-checkbox__text">Пропитка кв.м</span>
                                     <svg class="calcui-checkbox__icon" width="18" height="18" viewBox="0 0 22 22"
                                         fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -681,8 +683,8 @@
                                     <span class="calcui-text-smaller calcui-cost">+100 руб.</span>
                                 </div>
                                 <div class="calcui-checkbox__block">
-                                    <input type="checkbox" id="cu32" class="calcui-checkbox calcui-checkbox__light">
-                                    <label for="cu32" class="calcui-checkbox__btn"></label>
+                                    <input type="checkbox" id="cm02" class="calcui-checkbox calcui-checkbox__light">
+                                    <label for="cm02" class="calcui-checkbox__btn"></label>
                                     <span class="calcui-checkbox__text">Фотопечать кв.м</span>
                                     <svg class="calcui-checkbox__icon" width="18" height="18" viewBox="0 0 22 22"
                                         fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -696,8 +698,8 @@
                                     <span class="calcui-text-smaller calcui-cost">+100 руб.</span>
                                 </div>
                                 <div class="calcui-checkbox__block">
-                                    <input type="checkbox" id="cu33" class="calcui-checkbox calcui-checkbox__light">
-                                    <label for="cu33" class="calcui-checkbox__btn"></label>
+                                    <input type="checkbox" id="cm03" class="calcui-checkbox calcui-checkbox__light">
+                                    <label for="cm03" class="calcui-checkbox__btn"></label>
                                     <span class="calcui-checkbox__text">УФ печать кв.м</span>
                                     <svg class="calcui-checkbox__icon" width="18" height="18" viewBox="0 0 22 22"
                                         fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -717,6 +719,7 @@
                 </div>
             </div>
         </div>
+
         <div data-calcui-action="newglass" class="place-block-footer">
             <div class="place-block-footer__content">
                 <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -730,40 +733,22 @@
         <div class="place-block-cost">
             <p class="place-block-cost__main-title">Рассчет</p>
             <div class="place-block-cost__grid-wrapper">
-                <div class="place-block-cost__list-wrapper">
-                    <div class="place-block-cost__list-block">
-                        <div class="place-block-cost__list-title-row">
-                            <p class="place-block-cost__list-title">Обработка №1</p>
-                            <span class="place-block-cost__list-value">0 р.</span>
-                        </div>
-                        <div class="place-block-cost__list-body">
-                            <div class="place-block-cost__list-item">
-                                <p class="place-block-cost__list-item-text">Стекло (200х200мм)</p>
+                <div class="place-block-cost__list">
+                    <div data-calcui-main="out" class="place-block-cost__list-wrapper">
+                        <div class="place-block-cost__list-block">
+                            <div class="place-block-cost__list-title-row">
+                                <p class="place-block-cost__list-title">Обработка №1</p>
                                 <span class="place-block-cost__list-value">0 р.</span>
                             </div>
-                            <div class="place-block-cost__list-item">
-                                <p class="place-block-cost__list-item-text">Стекло (100х100мм)</p>
-                                <span class="place-block-cost__list-value">0 р.</span>
-                            </div>
-                            <div class="place-block-cost__list-item">
-                                <p class="place-block-cost__list-item-text">Действия над стеклами</p>
-                                <span class="place-block-cost__list-value">100 р.</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="place-block-cost__list-block">
-                        <div class="place-block-cost__list-title-row">
-                            <p class="place-block-cost__list-title">Обработка №2</p>
-                            <span class="place-block-cost__list-value">0 р.</span>
-                        </div>
-                        <div class="place-block-cost__list-body">
-                            <div class="place-block-cost__list-item">
-                                <p class="place-block-cost__list-item-text">Стекло (1000х200мм)</p>
-                                <span class="place-block-cost__list-value">0 р.</span>
-                            </div>
-                            <div class="place-block-cost__list-item">
-                                <p class="place-block-cost__list-item-text">Действия над стеклами</p>
-                                <span class="place-block-cost__list-value">0 р.</span>
+                            <div class="place-block-cost__list-body">
+                                <div class="place-block-cost__list-item">
+                                    <p class="place-block-cost__list-item-text">Стекло (0х0мм)</p>
+                                    <span class="place-block-cost__list-value">0 р.</span>
+                                </div>
+                                <div class="place-block-cost__list-item">
+                                    <p class="place-block-cost__list-item-text">Действия над стеклами</p>
+                                    <span class="place-block-cost__list-value">0 р.</span>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -818,9 +803,9 @@
                             </div>
                             <div class="place-block-cost__result-sale">
                                 <div class="place-block-cost__result-sale-text">
-                                    
+
                                 </div>
-                                
+
                             </div>
                         </div>
                         <div class="place-block-cost__result-footer">

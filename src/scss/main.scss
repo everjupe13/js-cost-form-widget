@@ -383,13 +383,15 @@
             flex-wrap: wrap
         }
 
-        &__list-wrapper {
+        &__list {
+            flex-basis: 400px;
             flex-grow: 1;
+        }
+
+        &__list-wrapper {
             padding: 40px 30px 50px;
             border: 1px solid #ECECEC;
             border-radius: 3px;
-
-            min-width: 400px
         }
 
         &__list-block {
@@ -450,8 +452,9 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-
             flex-grow: 1;
+
+            margin: 0;
 
             font-style: normal;
             font-weight: 700;
@@ -474,7 +477,8 @@
 
         &__aside {
             flex-grow: 1.5;
-            min-width: 580px;
+            flex-basis: 580px;
+            // min-width: 580px;
         }
 
         &__result-wrapper {
