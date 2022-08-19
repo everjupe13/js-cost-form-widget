@@ -11,6 +11,33 @@
     color: #029A71;
 }
 
+[data-tooltip] {
+    cursor: pointer;
+
+    * {
+        pointer-events: none;
+    }
+}
+
+.calcui-tooltip {
+    position: fixed;
+
+    padding: 10px 20px;
+    border: 1px solid #ececec;
+    border-radius: 1px;
+
+    max-width: 300px;
+    max-height: 300px;
+
+    text-align: center;
+    font-size: 13px;
+    line-height: 1.62;
+    color: #fff;
+
+    background: rgba(58, 58, 58, 0.97);
+
+    overflow-y: auto;
+}
 
 .calcui-radio {
     padding: 13px 20px;
@@ -552,8 +579,42 @@
             row-gap: 20px;
         }
 
+        &__result-sale {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        &__result-minus {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 13px;
+            line-height: 19px;
+            color: #EB5757;
+        }
+
+        &__result-sale-col {
+            display: flex;
+            align-items: center;
+
+            .calcui-checkbox__icon {
+                margin: 0;
+            }
+
+            .calcui-checkbox__text {
+                margin: 0;
+                margin-right: 10px;
+            }
+
+            .calcui-inp {
+                margin-left: 20px;
+                max-width: 110px;
+            }
+        }
+
         &__result-hr {
             margin: 35px 0 17px;
+            height: 1px;
             background: #ECECEC;
         }
 
@@ -569,7 +630,7 @@
 
         &__result-footer-text {
             margin: 0;
-            
+
             font-style: normal;
             font-weight: 700;
             font-size: 22px;
@@ -728,6 +789,7 @@
             &__label {
                 transition: cubic-bezier(0.23, 1, 0.320, 1) all .3s;
             }
+
             &__icon {
                 transform: rotateZ(180deg);
                 transition: cubic-bezier(0.23, 1, 0.320, 1) all .3s;
